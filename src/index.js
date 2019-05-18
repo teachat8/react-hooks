@@ -1,12 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import "./styles.css";
+// import ClassApp from "./class/ClassApp";
+// import App from "./hooks/useState";
+// import App from "./hooks/useReducer";
+// import App from "./hooks/App";
+// import Parent from "./class/ref-demo";
+// import Parent from "./hooks/ref-demo";
+// import EffectTimeDemo from "./hooks/effect-time-demo";
+// import Counter from "./hooks/optimization";
+import ClosureDemo from "./hooks/closure";
+// import ClosureDemo from "./class/closure";
+// import App from "./hooks/cond";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const rootElement = document.getElementById("root");
+ReactDOM.render(<ClosureDemo />, rootElement);
